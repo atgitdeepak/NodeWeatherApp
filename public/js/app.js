@@ -1,4 +1,3 @@
-
 //console.log('Client JS loaded');
 
 // fetch('http://puzzle.mead.io/puzzle')
