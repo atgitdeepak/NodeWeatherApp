@@ -1,5 +1,5 @@
 
-console.log('Client JS loaded');
+//console.log('Client JS loaded');
 
 // fetch('http://puzzle.mead.io/puzzle')
 //     .then((res) => {
