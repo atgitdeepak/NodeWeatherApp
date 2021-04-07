@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Home</title>
+    <link href="/img/weather.png" rel="icon">
+    <link href="/css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>This is the home page</p>
+        
+        <form>
+            <input placeholder="Address" type="text" />
+            <button type="button" onclick="getWeatherInfo()">Search</button>
+            <p id='output_1'></p>
+            <p id='output_2'></p>
+        </form>
+    </div>
+    {{!-- <h1>{{title}}</h1> --}}
+    
+    {{>footer}}
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>About</title>
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}} {{!-- using (>) we can access the partial file --}}
+        {{!--<h1>From {{title}} HBS File</h1> --}}
+        <img class='aboutImg' src='/img/test1.png' alt='img'>
+        <p>{{use}}</p>
+    </div>
+    {{>footer}}
+</body>
+
+</html>
