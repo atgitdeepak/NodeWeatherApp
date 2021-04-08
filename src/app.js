@@ -85,7 +85,7 @@ app.get('/weather', (req, res) => {
                 });
             }
             res.send({
-                type: newData.type, temp: newData.temp, feels: newData.feels, place: newData.place
+                type: newData.type, temp: newData.temp, feels: newData.feels, place: newData.place, windspeed : newData.windspeed
             });
         });
     });
