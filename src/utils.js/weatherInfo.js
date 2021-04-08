@@ -21,7 +21,8 @@ const getWeatherInfo = (lat, lon, subCallback) => {
             const weatherObj = response.body.current;
             // console.log(weatherObj.weather_descriptions[0] + ".It is currently " + weatherObj.temperature + " degrees out. It feels like " + weatherObj.feelslike
             //     + " degrees out.");
-            const sendObj={type:weatherObj.weather_descriptions[0], temp:weatherObj.temperature, feels:weatherObj.feelslike,place:response.body.location.name};
+            const sendObj={type:weatherObj.weather_descriptions[0], temp:weatherObj.temperature, feels:weatherObj.feelslike,place:response.body.location.name,
+                          windspeed:weatherObj.wind_speed};
             // subCallback(undefined, weatherObj.weather_descriptions[0] + ".It is currently " + weatherObj.temperature + " degrees out. It feels like " + weatherObj.feelslike
             // + " degrees out.");
             subCallback(undefined, sendObj);

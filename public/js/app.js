@@ -40,7 +40,7 @@ const fetchWeather = (location) =>{
         else {
             console.log(data);
             paraIdOut_1.textContent  = `Temperature is ${data.temp}`;
-            paraIdOut_2.textContent  = `Feels like  ${data.feels}`;
+            paraIdOut_2.textContent  = `Feels like  ${data.feels} and wind speed is ${data.windspeed}`;
         }
     }).catch((err) => {
         debugger
