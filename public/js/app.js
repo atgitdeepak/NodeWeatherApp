@@ -27,8 +27,9 @@ function getWeatherInfo(){
 }
 
 const fetchWeather = (location) =>{
-    fetch(`http://localhost:3001/weather?address=${location}`).then((res) => {
-        debugger
+    //fetch(`http://localhost:3001/weather?address=${location}`).then((res) => {
+    fetch(`/weather?address=${location}`).then((res) => { // we removed the previous part because then heroku won't
+        debugger                                          // be able to access localhost:3001
         return res.json();
     }).then((data) => {
         //debugger

@@ -133,9 +133,11 @@ app.get('*', (req, res) => {
 //     res.send('<h1>ABOUT PAGE</h1>');
 // });
 
+const port = process.env.PORT || 3001; //As, of now value of (process.env.PORT) will be nothing in local so 
+// we will use 3001 in local environment, but heroku will use (process.env.PORT) to serve our application
+// on any port that is available for a particular time
 
-
-app.listen(3001, () => { //very imp method(listen) without this nothing will work
-    console.log('Server is Started');
+app.listen(port, () => { //very imp method(listen) without this nothing will work
+    console.log('Server is Started on port:'+ port);
 });
 
