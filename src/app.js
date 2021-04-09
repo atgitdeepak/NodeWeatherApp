@@ -1,3 +1,6 @@
+// ADDING CHANGES TO LEARN ABOUT PULL REQUESTS FROM GITHUB
+
+
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs'); // for using partials
